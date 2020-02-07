@@ -275,3 +275,53 @@ p {
     max-width: 100%;
    
 }
+
+.team{
+    background-color: white;
+}
+.spacing {
+    float: left;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.team h2 {
+    color: black;
+    background-image: url(../images/h2_icon_green.png);
+}
+.team-holder{
+    display: flex;
+}
+.team-holder .t-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.team-holder .t-col img {
+    max-width: 100%;
+}
+.team-holder .t-col .img-holder{
+    border-radius: 50%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.team-holder .t-col .img-holder::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,255,0.5);
+}
+.team-holder h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+}
