@@ -27,6 +27,8 @@
     width: 75%;  
   }
 
+
+
 body {
     
     background: #eeefff url(../images/body_bg.png) no-repeat center top;
@@ -44,11 +46,37 @@ body {
     float: left;
     list-style-type: none;
     margin-left: 60px;
+    position: relative;
 }
 
 #navigation ul {
     float: right;
     margin-top: 28px;
+}
+
+#navigation ul>li:hover .submenu {
+    display: block;
+}
+
+#navigation ul li .submenu {
+    top: 0px;
+    left: 0;
+    padding-top: 25px;
+    position: absolute;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#navigation ul li .submenu li {
+    margin-left: 0;
+    width: 100%;
+}
+#navigation ul li .submenu li a {
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px dotted white;
 }
 
 .services {
@@ -434,4 +462,151 @@ form{
 
 .p-left ul li a.linkedin-icon {
     background-position: -80px 0;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p.copyright {
+    color:rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    
+}
+
+.navigation {
+    float: right;
+    margin-top: 15px;
+}
+
+.navigation li {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.navigation li a {
+    font-size: 14px;
+    color: white;
+}
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+/** Start test-form **/
+.test-form {
+    margin-top: 100px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.test-form label {
+    color: white;
+}
+
+fieldset {
+    color: white;
+}
+
+/** RWD **/
+
+@media only screen and (max-width: 728px) {
+    
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .header {
+        margin-top: 15px;
+    }
+
+    #navigation {
+        display: none;
+    }
+    .services {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .s-item {
+        width: 50%;
+        padding: 20px 20px 44px;
+    }
+    .image-holder {
+        width: 100px;
+        height: 100px;
+    }
+    .image-holder img {
+        max-width: 50%;
+        padding-top: 27px;
+    }
+    .s-item h2 {
+        font-size: 20px;
+    }
+    .s-item p {
+        font-size: 13px;
+    }
+    .s-item a {
+        left: 20px;
+    }
+    .services-tabs ul.tabs li {
+        width: 50%;
+        margin-right: 0;
+    }
+    .services-tabs ul.tabs li a {
+        min-height: 40px;
+        padding: 20px;
+    }
+    .services-tabs {
+        margin-top: 50px;
+    }
+    .panel {
+        display: block;
+        padding-bottom: 30px;
+    }
+    .col {
+        box-sizing: border-box;
+        padding: 30px 30px 0;
+    }
+
+    .about {
+        display: block;
+    }
+    .inside-div {
+        width: 100%;
+        position: relative;
+        padding-right: 0;
+    }
+    .about .blue-section {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .team-holder {
+        display: block;
+    }
+    .team-holder .t-col .image-holder {
+        margin-bottom: 10px;
+    }
+    .team-holder .t-col {
+        margin-bottom: 30px;
+    }
+
+    .contact-s .contact-col {
+        display: block;
+    }
+    .contact-s .p-left {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .copyright {
+        margin-top: 0;
+        float: right;
+    }
 }
